@@ -18,7 +18,7 @@ From a neighboring tavern table a commotion erupts, roll for initiative!
 
 Note that character class emojis are the gender-neutral default slack versions.
 
-[Install in your slack today](https://roll-for-initiative-kp73hsfita-uw.a.run.app/slack/install)!
+<a href="https://slack.com/oauth/authorize?client_id=4492317983.2417006836277&scope=incoming-webhook"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"></a>
 
 Most of the documentation for how to build this came from the Slack [Python Bolt docs](https://slack.dev/bolt-python/tutorial/getting-started) and [this excellent gist](https://gist.github.com/seratch/d81a445ef4467b16f047156bf859cda8) by [seratch](https://github.com/seratch).
 
