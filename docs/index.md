@@ -1,4 +1,4 @@
-![Image](dungon_door.png) ## Roll for Initiative
+<img src="dungeon_door.png" alt="Dungon Door" width="100" height="100"/> ## Roll for Initiative
 
 Roll for Initiative is a handy little Slack App that helps you randomize meeting orders.
 
