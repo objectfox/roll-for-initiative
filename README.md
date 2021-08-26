@@ -8,7 +8,14 @@ Sample Use
 
 ```
 
-Slack Output
+It generates simplified output to you, for easy cutting and pasting into Zoom or what have you.
+
+```
+
+Frodo, Bilbo, Mary, Joan, Gandalf, Tom and Tina
+```
+
+Then it sends a more exciting version to the conversation.
 
 ```
 From a neighboring tavern table a commotion erupts, roll for initiative!

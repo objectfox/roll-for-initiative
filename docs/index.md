@@ -14,7 +14,7 @@ Send Roll for Initiative a list of party members with the handy slash command.
 /initiative Britta, Annie, Shirley, Troy
 ```
 
-Random adventurer order and tasty flavor text is then delivered into the channel!
+Random adventurer order and tasty flavor text is then delivered into the channel, and a simplified version is sent to you for cutting and pasting into Zoom or other conferencing software!
 
 ```
 From a neighboring tavern table a commotion erupts, roll for initiative!
