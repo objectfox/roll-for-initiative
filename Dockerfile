@@ -11,5 +11,7 @@ WORKDIR $APP_HOME
 COPY . ./
 
 # Install production dependencies.
-RUN pip install --no-cache-dir -r requirements.txt
-CMD exec python app.py
+RUN pip install -U pip && pip install -r requirements.txt
+
+# Run the web service on container startup.
+ENTRYPOINT gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 app:flask_app

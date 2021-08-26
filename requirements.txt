@@ -1,1 +1,4 @@
-slack_bolt
+slack_bolt>=1.4.3,<2
+Flask>=1.1,<2
+gunicorn>=20
+google-cloud-datastore>=2.1.0,<3
