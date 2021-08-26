@@ -42,7 +42,7 @@ def generate_initiative(party):
     unsorted_party = []
     for adventurer in party:
         initiative = random.randrange(1,21)
-        unsorted_party += [[initiative,"%s %s (%s)" % (random_class_emoji(),adventurer,initiative)]]
+        unsorted_party += [[initiative,["%s %s (%s)" % (random_class_emoji(),adventurer,initiative),adventurer]]]
 
     # Sort the party by initiative
     sorted_party = sorted(unsorted_party, key=lambda x: x[0], reverse=True)
@@ -78,20 +78,23 @@ def adventure_hooks():
     return random.choice(hooks)
 
 
-# The echo command simply echoes on command
 @app.command("/initiative")
-def repeat_text(ack, say, command):
+def repeat_text(ack, say, respond, command):
     # Acknowledge command request
     ack()
-    print("Asked for initiative with %s" % command['text'])
     actors = result = [x.strip() for x in command['text'].split(',')]
-    party = generate_initiative(actors)
-    if len(party) > 1:
-        message = "%s and %s" % (", ".join(party[:-1]), party[-1])
-    else:
-        message = party[0]
+    party_data = generate_initiative(actors)
+    adventurer_names = [x[0] for x in party_data]
+    simple_names = [x[1] for x in party_data]
     adventure_hook = adventure_hooks()
-    say(f"{adventure_hook}\n{message}")
+
+    if len(adventurer_names) > 1:
+        room_message = "%s and %s" % (", ".join(adventurer_names[:-1]), adventurer_names[-1])
+        response_message = "%s and %s" % (", ".join(simple_names[:-1]), simple_names[-1])
+        respond(f"{response_message}")
+    else:
+        room_message = adventurer_names[0]
+    say(f"{adventure_hook}\n{room_message}")
 
 
 @app.event("tokens_revoked")
