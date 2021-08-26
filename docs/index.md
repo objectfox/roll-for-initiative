@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+![Image](dungon_door.png) ## Roll for Initiative
 
-You can use the [editor on GitHub](https://github.com/objectfox/roll-for-initiative/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Roll for Initiative is a handy little Slack App that helps you randomize meeting orders.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Usage
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+/initiative Britta, Annie, Shirley, Troy
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Credits
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/objectfox/roll-for-initiative/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Created by [objectfox](https://github.com/objectfox), icon by smalllikeart on [Flaticon](https://www.flaticon.com/free-icon/door_5374087)
