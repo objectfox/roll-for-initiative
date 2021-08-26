@@ -83,6 +83,7 @@ def repeat_text(ack, say, respond, command):
     # Acknowledge command request
     ack()
     actors = result = [x.strip() for x in command['text'].split(',')]
+    random.shuffle(actors)
     party_data = generate_initiative(actors)
     adventurer_names = [x[0] for x in party_data]
     simple_names = [x[1] for x in party_data]
