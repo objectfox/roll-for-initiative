@@ -62,7 +62,7 @@ def random_class_emoji():
         ":robot_face:",
         ":alien:",
         ":ghost:",
-        ":guardsman:"
+        ":health-worker:"
     ]
     return random.choice(emojis)
 
